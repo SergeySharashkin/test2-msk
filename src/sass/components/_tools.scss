@@ -1,0 +1,36 @@
+.tools-tittel {
+  font-size: 30px;
+  font-family: $primary-font;
+  color: $primary-text-color;
+  line-height: 0.533;
+//   position: absolute;
+  // left: 28.938px;
+  // top: 147.833px;
+  // z-index: 31;
+}
+.tools {
+ @extend %auto-margin;
+ border-top: 1px solid #e5e5e5;
+}
+.tools__container {
+    @extend %auto-margin;
+  padding: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 1920px;
+    padding-left: 188px;
+    padding-right: 188px;
+  }
+}
+.tools-button {
+font-size: 30px;
+border: none;
+background: none;
+// margin: 0;
+padding: 0;
+}
