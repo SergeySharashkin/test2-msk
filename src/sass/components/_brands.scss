@@ -1,7 +1,7 @@
 .brands {
   @extend %auto-margin;
-  padding-left: 30px;
-  padding-right: 30px;
+  // padding-left: 30px;
+  // padding-right: 30px;
   background-color:$primary-br-color;
 }
 .brands__contain {
@@ -10,9 +10,8 @@
   background-color: #fff;
   @media screen and (min-width: 768px) {
     display: flex;
-    max-width: 1920px;
-    padding-left: 188px;
-    padding-right: 188px;
+    max-width: 1550px;
+    
   }
 }
 .brands__list {
@@ -33,6 +32,13 @@
   &:nth-last-child(-n+2){
     border:none
   }
+  @media screen and (min-width: 768px) {
+    width: (100%/6);
+    padding: 14px 0;
+    &:last-child::after {
+border: none; 
+    }
+  }
 &::after {
     content: '';
     position: absolute;
@@ -43,6 +49,9 @@
 }
 &:nth-child(2n)::after {
     display: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 
 }
@@ -57,4 +66,14 @@
   font-size: 30px;
   font-family: $secondary-font;
   color: $primary-text-color;
+  @media screen and (min-width: 768px) {
+    height: 72px;
+    font-size: 18px;
+    &>img{
+      width: 135px;
+      height: 35px;
+      // justify-self: center;
+      // align-self: center;
+    }
+  }
 }

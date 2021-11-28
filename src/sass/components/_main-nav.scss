@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   @media screen and (min-width: 768px) {
-    max-width: 1550px;
+    // max-width: 1550px;
     justify-content: space-between;
     color: $hero-bgr-color;
     font-size: 16px;
@@ -19,35 +19,48 @@
 
 }
 .main-nav__list {
-  text-decoration: none;
   @extend %list;
   display: flex;
-   margin-top: 0;
-  margin-bottom: 0;
   flex-direction: column;
   @media screen and (min-width:767px) {
     flex-direction: row;
     align-items: center;
+    // margin-left: auto;
     // justify-content: space-between;
+    padding-top: 7px;
+    
+    &::after {
+      content: '';
+      height: 30px;
+      margin: 0 30px 0 30px;
+      border: 1px solid #40bf79;
+      
+    }
+    &.main-nav__list--last {
+      &::after{
+        display: none;
+      }
+    }
+    
+    
 } 
   
  
 }
 .main-nav__item {
-  margin-right: 5px;
- font-size: 30px;
- 
-  &:last-child {
-    margin-right: 0px;
-    
-  }
-  @media screen and (min-width: 767px) {
-   
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+      font-size: 15px;
     margin: 0;
-  }
+  
+  @media screen and (min-width:768px) { 
+    font-size: 16px;
+    margin-right: 48px;
+    color: $secondary-text-color;
+    &:last-child {
+      margin-right: 0px;
+    }
+
+  // 
+  } 
 }
 
 .main-nav__link {
@@ -66,7 +79,7 @@
   }
  
 @media screen and (min-width:768px) {
-  padding: 0 10px 0 10px;
+  padding: 7px 0 7px 0;
   color: $secondary-text-color;
 // 
 } 
@@ -75,6 +88,7 @@
   @extend %list;
   display: flex;
   flex-direction: row;
+  margin-left: 52px;
   @media screen and (max-width: 767px) {
     display: none;
     
@@ -83,6 +97,9 @@
 }
 .main-nav__contacts__item {
   display: flex;
+ &:last-child {
+   margin-left: 40px;
+ } 
 }
 .main-nav__contacts__link {
   display: flex;
@@ -90,10 +107,13 @@
   align-items: center;
   text-decoration: none;
   color: $secondary-text-color;
-  &>svg {
+  &>.main-nav__contacts__icon {
     fill: $secondary-text-color;
-    margin-right: 10px;
+    margin-right: 8px;
+  
+  &.icon--tel {
+    margin-right: 3px;
   }
-
+}
 }
 
