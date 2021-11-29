@@ -16,7 +16,7 @@
   margin-left: auto;
 }
 
-.informatoin__items__list, .information__list, .about__list, .recommendations__list, .news__list, .brands__list, .suggestions__list, .main-nav__contacts, .main-nav__list, .header__contacts, .menu__nav-list {
+.informatoin__items__list, .information__list, .about__list, .news__list, .brands__list, .suggestions__list, .main-nav__contacts, .main-nav__list, .header__contacts, .menu__nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1041,7 +1041,7 @@ a {
   .recommendations__contain {
     display: flex;
     flex-direction: column;
-    max-width: 1550px;
+    max-width: 1400px;
   }
 }
 
@@ -1050,17 +1050,43 @@ a {
   padding-top: 110px;
   padding-bottom: 75px;
 }
+@media screen and (min-width: 768px) {
+  .recommendations__preview {
+    padding: 0;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 65px;
+  }
+}
 
 .recommendations__preview__tittel {
   font-size: 50px;
   font-family: "MyriadPro Regular", sans-serif;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 768px) {
+  .recommendations__preview__tittel {
+    font-size: 40px;
+    margin-bottom: 25px;
+  }
+}
 
 .recommendations__preview__description {
   font-size: 30px;
   color: #777777;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__preview__description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recommendations__list {
+    display: flex;
+  }
 }
 
 .recommendations__card {
@@ -1072,46 +1098,26 @@ a {
   padding-top: 110px;
   padding-bottom: 85px;
 }
+@media screen and (min-width: 768px) {
+  .recommendations__card {
+    max-width: 783px;
+    margin: 0;
+    padding: 69px 150px 520px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .recommendations__card:last-child {
   margin-bottom: 0;
 }
-.recommendations__card:nth-child(2) {
-  background-color: #282828;
-  color: #f3f1f1;
-  padding-left: 275px;
-  padding-top: 67px;
-  padding-bottom: 60px;
-}
-.recommendations__card:nth-child(2) > .recommendations__card__img {
-  top: 45px;
-  left: -120px;
-}
-.recommendations__card:nth-child(2) > .recommendations__card__description {
-  max-width: 92%;
-}
-.recommendations__card:nth-child(2) > .recommendations__card__name {
-  margin-bottom: 20px;
-}
-.recommendations__card:nth-child(2) > .recommendations__card__tittel {
-  margin-bottom: 58px;
-}
-.recommendations__card:nth-child(3) {
-  padding-top: 135px;
-  padding-bottom: 120px;
-}
-.recommendations__card:nth-child(3) > .recommendations__card__img {
-  top: 74px;
-  right: -143px;
-  transform: scale(-1, 1) rotate(-2deg);
-}
-.recommendations__card:nth-child(3) > .recommendations__card__description {
-  max-width: 60%;
-}
-.recommendations__card:nth-child(3) > .recommendations__card__name {
-  margin-bottom: 8px;
-}
-.recommendations__card:nth-child(3) > .recommendations__card__tittel {
-  margin-bottom: 45px;
+
+@media screen and (min-width: 768px) {
+  .recommendations__card--first {
+    max-width: 594px;
+    max-height: 745px;
+    margin-right: auto;
+  }
 }
 
 .recommendations__card__name {
@@ -1119,11 +1125,23 @@ a {
   text-transform: uppercase;
   margin-bottom: 12px;
 }
+@media screen and (min-width: 768px) {
+  .recommendations__card__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
 
 .recommendations__card__tittel {
   font-size: 40px;
   font-family: "MyriadPro Regular", sans-serif;
   margin-bottom: 45px;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card__tittel {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
 }
 
 .recommendations__card__description {
@@ -1132,11 +1150,107 @@ a {
   line-height: 1.2;
   color: #777777;
 }
+@media screen and (min-width: 768px) {
+  .recommendations__card__description {
+    max-width: 350px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
 
 .recommendations__card__img {
   position: absolute;
-  top: 25px;
-  right: -30px;
+  bottom: -54%;
+  right: 12%;
+  width: 100%;
+  max-width: 440px;
+}
+
+@media screen and (min-width: 768px) {
+  .recommendations__card__cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.recommendations__card--sec {
+  background-color: #282828;
+  color: #f3f1f1;
+  padding: 120px 140px 120px 250px;
+  margin-bottom: auto;
+  align-items: flex-start;
+}
+.recommendations__card--sec > .recommendations__card__img {
+  top: 45px;
+  left: -120px;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--sec > .recommendations__card__img {
+    width: 387px;
+    height: 413px;
+    top: 2%;
+    left: -25%;
+  }
+}
+.recommendations__card--sec > .recommendations__card__description {
+  max-width: 92%;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--sec > .recommendations__card__description {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+.recommendations__card--sec > .recommendations__card__name {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--sec > .recommendations__card__name {
+    margin-bottom: 10px;
+  }
+}
+.recommendations__card--sec > .recommendations__card__tittel {
+  margin-bottom: 58px;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--sec > .recommendations__card__tittel {
+    margin-bottom: 25px;
+    max-width: 200px;
+  }
+}
+
+.recommendations__card--tre {
+  align-items: flex-start;
+  padding: 95px 200px 65px 65px;
+}
+.recommendations__card--tre > .recommendations__card__img {
+  top: 74px;
+  right: -143px;
+  transform: scale(-1, 1) rotate(-2deg);
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--tre > .recommendations__card__img {
+    top: 5%;
+    right: -10%;
+    width: 387px;
+    height: 392px;
+  }
+}
+.recommendations__card--tre > .recommendations__card__description {
+  max-width: 60%;
+}
+@media screen and (min-width: 768px) {
+  .recommendations__card--tre > .recommendations__card__description {
+    text-align: left;
+    width: 100%;
+  }
+}
+.recommendations__card--tre > .recommendations__card__name {
+  margin-bottom: 5px;
+}
+.recommendations__card--tre > .recommendations__card__tittel {
+  margin-bottom: 25px;
 }
 
 .about {
@@ -1150,15 +1264,28 @@ a {
 @media screen and (min-width: 768px) {
   .about__contain {
     display: flex;
-    max-width: 1920px;
-    padding-left: 188px;
-    padding-right: 188px;
+    max-width: 1415px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
 .about__mane {
   padding-top: 100px;
   padding-left: 55px;
+}
+@media screen and (min-width: 768px) {
+  .about__mane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.logo--about {
+  width: 151px;
+  height: 151px;
 }
 
 .about__link__site {
@@ -1167,10 +1294,21 @@ a {
   color: #000000;
   margin-top: 45px;
 }
+@media screen and (min-width: 768px) {
+  .about__link__site {
+    font-size: 40px;
+    margin-top: 33px;
+  }
+}
 
 .about__link__tittel {
   font-size: 25px;
   color: #777777;
+}
+@media screen and (min-width: 768px) {
+  .about__link__tittel {
+    font-size: 16px;
+  }
 }
 
 .about__tittel {
@@ -1178,11 +1316,22 @@ a {
   font-size: 40px;
   margin-top: 52px;
 }
+@media screen and (min-width: 768px) {
+  .about__tittel {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+}
 
 .about__indicators {
   font-size: 30px;
   margin-top: 5px;
   color: #777777;
+}
+@media screen and (min-width: 768px) {
+  .about__indicators {
+    font-size: 18px;
+  }
 }
 
 .about__list {
@@ -1190,9 +1339,20 @@ a {
   font-size: 30px;
   line-height: 1.2;
 }
+@media screen and (min-width: 768px) {
+  .about__list {
+    font-size: 18px;
+  }
+}
 
 .about__description {
   margin-top: 130px;
+}
+@media screen and (min-width: 768px) {
+  .about__description {
+    max-width: 850px;
+    margin: 0;
+  }
 }
 
 .about__description__tittel {
@@ -1200,11 +1360,29 @@ a {
   font-family: "MyriadPro Regular", sans-serif;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .about__description__tittel {
+    font-size: 40px;
+    max-width: 800px;
+    margin-bottom: 25px;
+  }
+}
+.about__description__tittel.about__description__tittel--sec {
+  font-family: "MyriadPro SemiExtended", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
 
 .about__activity {
   font-size: 30px;
   line-height: 1.2;
   max-width: 96%;
+}
+@media screen and (min-width: 768px) {
+  .about__activity {
+    max-width: 100%;
+    font-size: 18px;
+  }
 }
 
 .about__button {
