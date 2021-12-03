@@ -184,12 +184,17 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"sass/main.scss":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"fonts/stylesheet.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\MYRIADPRO-REGULAR.OTF":[["MYRIADPRO-REGULAR.752bcc53.OTF","fonts/MYRIADPRO-REGULAR.OTF"],"fonts/MYRIADPRO-REGULAR.OTF"],"./..\\fonts\\Myriad_Pro_Light_SemiExtended.otf":[["Myriad_Pro_Light_SemiExtended.3f5c2c0b.otf","fonts/Myriad_Pro_Light_SemiExtended.otf"],"fonts/Myriad_Pro_Light_SemiExtended.otf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./MyriadPro-Regular.eot":[["MyriadPro-Regular.09cd53a3.eot","fonts/MyriadPro-Regular.eot"],"fonts/MyriadPro-Regular.eot"],"./MyriadPro-Regular.woff2":[["MyriadPro-Regular.5248ab9f.woff2","fonts/MyriadPro-Regular.woff2"],"fonts/MyriadPro-Regular.woff2"],"./MyriadPro-Regular.woff":[["MyriadPro-Regular.50b877b0.woff","fonts/MyriadPro-Regular.woff"],"fonts/MyriadPro-Regular.woff"],"./MyriadPro-Regular.ttf":[["MyriadPro-Regular.dd118b75.ttf","fonts/MyriadPro-Regular.ttf"],"fonts/MyriadPro-Regular.ttf"],"./MyriadPro-Regular.svg":[["MyriadPro-Regular.fba730a4.svg","fonts/MyriadPro-Regular.svg"],"fonts/MyriadPro-Regular.svg"],"./MyriadPro-Semibold.eot":[["MyriadPro-Semibold.5964b4c7.eot","fonts/MyriadPro-Semibold.eot"],"fonts/MyriadPro-Semibold.eot"],"./MyriadPro-Semibold.woff2":[["MyriadPro-Semibold.fe9e6775.woff2","fonts/MyriadPro-Semibold.woff2"],"fonts/MyriadPro-Semibold.woff2"],"./MyriadPro-Semibold.woff":[["MyriadPro-Semibold.a0ae3f7d.woff","fonts/MyriadPro-Semibold.woff"],"fonts/MyriadPro-Semibold.woff"],"./MyriadPro-Semibold.ttf":[["MyriadPro-Semibold.985122f6.ttf","fonts/MyriadPro-Semibold.ttf"],"fonts/MyriadPro-Semibold.ttf"],"./MyriadPro-Semibold.svg":[["MyriadPro-Semibold.bc681e78.svg","fonts/MyriadPro-Semibold.svg"],"fonts/MyriadPro-Semibold.svg"],"./MyriadPro-LightSemiExt.eot":[["MyriadPro-LightSemiExt.08b1492c.eot","fonts/MyriadPro-LightSemiExt.eot"],"fonts/MyriadPro-LightSemiExt.eot"],"./MyriadPro-LightSemiExt.woff2":[["MyriadPro-LightSemiExt.3daf126e.woff2","fonts/MyriadPro-LightSemiExt.woff2"],"fonts/MyriadPro-LightSemiExt.woff2"],"./MyriadPro-LightSemiExt.woff":[["MyriadPro-LightSemiExt.310df4df.woff","fonts/MyriadPro-LightSemiExt.woff"],"fonts/MyriadPro-LightSemiExt.woff"],"./MyriadPro-LightSemiExt.ttf":[["MyriadPro-LightSemiExt.fb5f60d0.ttf","fonts/MyriadPro-LightSemiExt.ttf"],"fonts/MyriadPro-LightSemiExt.ttf"],"./MyriadPro-LightSemiExt.svg":[["MyriadPro-LightSemiExt.5af728d6.svg","fonts/MyriadPro-LightSemiExt.svg"],"fonts/MyriadPro-LightSemiExt.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"sass/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"../fonts/stylesheet.css":"fonts/stylesheet.css","_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64480" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59702" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
